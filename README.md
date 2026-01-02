@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+ZIP URL: https://drive.google.com/uc?export=download&id=1TLZS5MsqJFfK22twcImJnUoGcnajED5k
+
 First, run the development server:
 
 ```bash
