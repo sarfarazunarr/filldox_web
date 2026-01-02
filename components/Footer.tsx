@@ -1,4 +1,5 @@
 
+
 export function Footer() {
     return (
         <footer className="border-t border-white/5 bg-black/20 py-12">
@@ -16,6 +17,8 @@ export function Footer() {
                     <p className="text-secondary-foreground/40 text-sm mb-4 md:mb-0">
                         © {new Date().getFullYear()} FillDox. All rights reserved.
                     </p>
+
+
                 </div>
             </div>
         </footer>

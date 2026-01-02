@@ -49,12 +49,13 @@ export function Hero() {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="flex flex-col sm:flex-row gap-4 mb-16"
                     >
-                        <Button variant="glow" size="lg" className="group">
-                            <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+                        <Button variant="glow" size="lg" className="group" onClick={() => window.location.href = "https://drive.google.com/uc?export=download&id=1TLZS5MsqJFfK22twcImJnUoGcnajED5k"}>
+                            <Download className="mr-2 h-5 w-5 group-hover:animate-bounce"
+                            />
                             Download for Windows
                         </Button>
-                        <Button variant="outline" size="lg" className="group">
-                            View Roadmap
+                        <Button variant="outline" size="lg" className="group" onClick={() => window.location.href = "/tutorial"}>
+                            Tutorial
                             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                         </Button>
                     </motion.div>

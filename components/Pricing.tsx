@@ -13,7 +13,6 @@ const plans = [
             "Manual Template Creation",
             "Single Document Generation",
             "Local Data Storage",
-            "Community Support",
         ],
         cta: "Download Preview",
         popular: false,
@@ -21,7 +20,7 @@ const plans = [
     },
     {
         name: "Pro",
-        price: "$19",
+        price: "--",
         period: "/month",
         description: "For power users who need maximum efficiency.",
         features: [
@@ -29,7 +28,6 @@ const plans = [
             "AI-Powered Generation",
             "Unlimited Batch Processing",
             "Cloud Template Sync",
-            "Priority Support",
         ],
         cta: "Join Waitlist",
         popular: true,
@@ -57,8 +55,8 @@ export function Pricing() {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
                             className={`relative p-8 rounded-2xl border ${plan.popular
-                                    ? "border-primary/50 bg-primary/5 shadow-lg shadow-primary/10"
-                                    : "border-white/10 bg-white/5"
+                                ? "border-primary/50 bg-primary/5 shadow-lg shadow-primary/10"
+                                : "border-white/10 bg-white/5"
                                 }`}
                         >
                             {plan.popular && (
