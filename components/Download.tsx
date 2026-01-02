@@ -28,7 +28,7 @@ export function Download() {
                                 variant="glow"
                                 size="lg"
                                 className="min-w-[250px] h-16 text-lg"
-                                onClick={() => window.location.href = "https://drive.google.com/uc?export=download&id=1TLZS5MsqJFfK22twcImJnUoGcnajED5k"}
+                                onClick={() => window.location.href = "https://drive.google.com/uc?export=download&id=1bwtOwp6DwHpAvqcM9GwILppfT1QcNqVB"}
                             >
                                 <DownloadIcon className="mr-2 h-6 w-6" />
                                 Download for Windows

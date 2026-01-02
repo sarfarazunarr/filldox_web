@@ -5,6 +5,7 @@ import { Button } from "./ui/Button";
 import { Badge } from "./ui/Badge";
 import { ArrowRight, Download } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Hero() {
     return (
@@ -49,15 +50,15 @@ export function Hero() {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="flex flex-col sm:flex-row gap-4 mb-16"
                     >
-                        <Button variant="glow" size="lg" className="group" onClick={() => window.location.href = "https://drive.google.com/uc?export=download&id=1TLZS5MsqJFfK22twcImJnUoGcnajED5k"}>
+                        <Button variant="glow" size="lg" className="group" onClick={() => window.location.href = "https://drive.google.com/uc?export=download&id=1bwtOwp6DwHpAvqcM9GwILppfT1QcNqVB"}>
                             <Download className="mr-2 h-5 w-5 group-hover:animate-bounce"
                             />
                             Download for Windows
                         </Button>
-                        <Button variant="outline" size="lg" className="group" onClick={() => window.location.href = "/tutorial"}>
+                        <Link href={"/tutorial"}><Button variant="outline" size="lg" className="group" >
                             Tutorial
                             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                        </Button>
+                        </Button></Link>
                     </motion.div>
 
                     <motion.div
