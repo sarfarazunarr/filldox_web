@@ -2,9 +2,10 @@
 
 import { motion } from "framer-motion";
 import { Button } from "./ui/Button";
-import { Download as DownloadIcon, Monitor } from "lucide-react";
+import { Download as DownloadIcon } from "lucide-react";
 
 export function Download() {
+    const downloadUrl = process.env.NEXT_PUBLIC_DOWNLOAD_URL || "";
     return (
         <section className="py-24 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/10 pointer-events-none" />
@@ -28,7 +29,7 @@ export function Download() {
                                 variant="glow"
                                 size="lg"
                                 className="min-w-[250px] h-16 text-lg"
-                                onClick={() => window.location.href = "https://drive.google.com/uc?export=download&id=1bwtOwp6DwHpAvqcM9GwILppfT1QcNqVB"}
+                                onClick={() => window.location.href = downloadUrl}
                             >
                                 <DownloadIcon className="mr-2 h-6 w-6" />
                                 Download for Windows

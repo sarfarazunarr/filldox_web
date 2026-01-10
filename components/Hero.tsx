@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export function Hero() {
+    const downloadUrl = process.env.NEXT_PUBLIC_DOWNLOAD_URL || "";
     return (
         <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
             {/* Background Effects */}
@@ -50,7 +51,7 @@ export function Hero() {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="flex flex-col sm:flex-row gap-4 mb-16"
                     >
-                        <Button variant="glow" size="lg" className="group" onClick={() => window.location.href = "https://drive.google.com/uc?export=download&id=1bwtOwp6DwHpAvqcM9GwILppfT1QcNqVB"}>
+                        <Button variant="glow" size="lg" className="group" onClick={() => window.location.href = downloadUrl}>
                             <Download className="mr-2 h-5 w-5 group-hover:animate-bounce"
                             />
                             Download for Windows
